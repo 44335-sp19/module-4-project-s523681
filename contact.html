@@ -38,7 +38,7 @@
       <input id='newsCB' type="checkbox" name="news" value="news">
         <label for="newsCB">
           I would like to subscribe to the newsletter.
-        </label></br>
+        </label><br>
       <button type="submit" name="SubmitButton" value="Submit">Submit</button>
       <button type="reset" name="ResetButton" value="Reset">Reset</button>
     </form>
@@ -46,12 +46,39 @@
 	<script>
 			//Step 5: Set an id on each option in the select tag. Name the id's state1, state2, and state3.
 			//Change the states that are used in the dropdown box to "Missouri", "Iowa", "Nebraska". Use the states abbreviation for the value property.
-
-			
-			
-			
-			
-			
+        
+        
+        /*var optionstate = document.getElementsByClassName("state");
+        
+        
+        optionstate[0].id = "state1";
+        
+        document.getElementById("state1").innerHTML = "Missouri";
+        
+        document.getElementById("state1").value = "MO";
+        
+        
+        
+        
+        
+        optionstate[1].id = "state2";
+        
+        document.getElementById("state2").innerHTML("Iowa");
+        
+        document.getElementById("state2").value = "IA";
+        
+       
+        
+        
+        
+        optionstate[2].id = "state3";
+        
+        document.getElementById("state3").innerHTML("Nebraska");
+        
+        document.getElementById("state3").value = "NE";
+        
+            
+			*/
 			
 			
 	
@@ -60,9 +87,12 @@
 
 			
 			
+			var states = document.getElementsByClassName("state");
+        for (var i = 0; i < states.length; i++)
+            {
+            states[i].innerHTML = "Hello";
 			
-			
-			
+            }
 			
 			
 			

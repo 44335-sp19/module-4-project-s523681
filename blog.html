@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html>
+    <head>
 <title>Lighthouse Island Bistro</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="lighthouse.css">
@@ -22,12 +25,12 @@
 	<aside id="blogline">Watch for the March Madness Wrap next month!</aside>
 	<section>
 		<article>
-			<header><h3>Valentine Wrap</h3><header>
+            <header><h3>Valentine Wrap</h3></header>
 			<time datetime="2015-02-01">February 1, 2015</time>
 			<p>The February special sandwich is the Valentine Wrap &mdash; heart healthy organic chicken with roasted red peppers on a whole wheat wrap.</p>
 		</article>
 		<article>
-			<header><h3>New Coffee of the Day Promotion</h3><header>
+            <header><h3>New Coffee of the Day Promotion</h3></header>
 			<time datetime="2015-01-12">January 12, 2015</time>
 			<p>Enjoy the best coffee on the coast in the comfort of your home. We will feature a different flavor of our gourmet, locally roasted coffee each day with free bistro tastings and a discount on one-pound bags.</p>
 		</article>
@@ -37,7 +40,7 @@
 			//Step 3: Set and id called "blogline" on the "aside" tag. 
 			//Change the text on the aside element to say "March Madness wrap now available!"
 
-			
+			document.getElementById("blogline").innerHTML = "March Madness wrap now available!";
 			
 					
 			
@@ -47,7 +50,11 @@
 			
 			//Step 4: Change the h3 tags to be italic
 			
-			
+			var taglist = document.getElementsByTagName("h3");
+            for (var i = 0; i < taglist.length; i++)
+                {
+                    taglist[i].style.fontStyle = "italic";
+                }
 			
 			
 			
